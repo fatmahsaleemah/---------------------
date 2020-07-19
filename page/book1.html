@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لنقرأ</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./book1.css">
+    <link rel="shortcut icon" type="image/png" href="../logo/logo.png">
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+
+
+
+    
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.0/firebase-ui-auth.css" />
+        
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.0/firebase-ui-auth__ar.js"></script>
+    <script src=https://www.gstatic.com/firebasejs/ui/4.6.0/firebase-ui-auth-rtl.css></script>
+<!-- <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.0/firebase-ui-auth.css" />
+        -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.0/firebase-ui-auth.css" />
+        
+    
+
+    <script src="../Firebase-Login/fireBase.js"></script>
+    <script src="../Firebase-Login/main.js"></script>
+
+</head>
+<body>
+
+<!-- ----------------------------------------------------------- -->
+ 
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="../logo/logo1.gif" class="img" width="50px" height="50px">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+          </label>
+        </div>
+        
+ 
+
+        <div class="nav-links" id="main_container" >
+          <!-- <a href="#" onclick="mainApp.logout();">تسجيل خروج</a> -->
+          <a href="../Firebase-Login/login.html" >تسجيل دخوول</a>
+          <a href="../page9/page9.html" >ركن المحاوله انجاز</a>
+          <a href="#" >الصفحه الرئيسيه</a>
+          <a href="#" class="logoBook">لنقرأ</a>
+      </div>
+      
+     <!-- ----------------------------------------------------------- -->
+      <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="  ابحث عن كتابك؟"><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+      </div>
+   
+<!-- ----------------------------------------------------------- -->
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../صور للمشروع النهائي/Summer-reading-list-2017-LEAD-e1495829573213.jpg" style="width:100%" height="650px">
+      <div class="text">قارئ اليوم قائد الغد
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../صور للمشروع النهائي/magic-book-1.jpg" style="width:100%" height="650px">
+      <div class="text"> العلم هو داء لسموم الخرافات
+        <br>
+        جويس كارول اوتس
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="../صور للمشروع النهائي/Five-Accurate-Descriptions-of-Morocco-in-Contemporary-Online-Lit-1.jpg" style="width:100%" height="650px">
+      <div class="text">بمجرد ان تتعلم القراءه ستكون حرا للابد
+        <br>
+        فريدريك دووغلاس
+      </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+<!-- ----------------------------------------------------------- -->  
+              <h1 id="h">الاكثر شهره</h1>
+              
+                 <div class="body">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                      <img src="../كتب صوتيه انجليزيه/elephant-babies-600x600.jpg" height="300px" width="300px">
+                      <p class="p">Hush Little Baby</p>
+                    </div>
+                    <div class="swiper-slide" >
+                      <img src="../القصص والروايات/350_a30031efeb05200e8bd37683c449512f.jpg" height="300px" width="300px">
+                      <p class="p">خارج السيطره</p>
+                    </div>
+                    <div class="swiper-slide" >
+                      <img src="../كتب صوتيه انجليزيه/crab-cover-600.jpg" height="300px" width="300px">
+                      <p class="p">Don't Worry Little Crab</p>
+                    </div>
+                    <div class="swiper-slide" >
+                      <img src="../القصص والروايات/Screen Shot 2020-07-10 at 5.35.35 PM.png" height="300px" width="300px">
+                      <p class="p">النجوم الطائره</p>
+                    </div>
+                    <div class="swiper-slide" >
+                      <img src="../القصص والروايات/Screen Shot 2020-07-10 at 5.35.57 PM.png" height="300px" width="300px">
+                      <p class="p">مغامرات تماثيل</p>
+                    </div>
+                    <div class="swiper-slide" >
+                      <img src="../القصص والروايات/Screen Shot 2020-07-10 at 5.36.28 PM.png" height="300px" width="300px">
+                      <p class="p">كل الطرق لا تؤدي الى روما</p>
+                    </div>
+    
+                  </div> 
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+<!-- ----------------------------------------------------------- -->
+
+             
+              <div class="main">
+                <header id="header" class="header">
+                  <div class="iconShopping">
+                    <p>0</p>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+                  </div>
+                </header>
+<!-- ----------------------------------------------------------- -->
+              <div id="mySidenav" class="sidenav">
+                <a href="../page2/page2.html" id="about" clase="size">كتب للاطفال</a>
+                <a href="../page8/page8.html" id="blog" clase="size">كتب تاريخيه</a>
+                <a href="../page5/page5.html" id="projects" clase="size">كتب صوتيه</a>
+                <a href="../page4/page4.html" id="kialih" clase="size"> قصص خياليه</a>
+                <a href="../page6/page6.html" id="pictir" clase="size">تصوير فوتغرافي</a>
+                <a href="../page7/page7.html" id="riwit" clase="size">قصص و روايات</a>
+              </div>
+<!-- ----------------------------------------------------------- -->
+
+
+
+              <h1 id="h" class="text2">كتب تاريخيه</h1>
+              
+  <div class="contaner">
+    <center>
+        <div class="card">
+        <div class="imgBox">
+        <img src="../صور/Screen Shot 2020-07-12 at 7.14.58 PM.png" height="300px" width="250px" >
+        </div>
+        <div class="details">
+            <h5>الدوله الامويه</h5>
+            <p>نبذه عن الكتاب  </p>
+            
+                    </div>
+        </div>
+       
+        <div class="itemsBox">
+          <div class="item">
+            <div class="itemInfo">
+              <h1>الدوله الامويه</h1>
+              <p><span>الكبار</span></p>
+              <a title="add to cart" class="attToCart"> <i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+            </div>
+          </center>
+
+          <center>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../صور/Screen Shot 2020-07-12 at 7.15.18 PM.png" height="300px" width="250px">
+             </div>
+             <div class="details">
+             <h5>موسوعه مصر القديمه</h5>
+             <p>الجزء الثاني في »مصر القديمة« وهو يبحث في مدينة
+              الدولة المصرية القديمة حتى الأسرة العاشرة، وما يتصل بها من نظمها الاجتماعية 
+              والسياسية والثقافية</p>
+                     </div>
+                 </div>
+                 <div class="itemsBox">
+                  <div class="item">
+                    <div class="itemInfo">
+                      <h1>موسوعه مصر القديمه</h1>
+                      <p><span>الكبار</span></p>
+                      <a  title="add to cart" class="attToCart"> <i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                    </div>
+                  </center>
+        
+
+                  <center>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../صور/Screen Shot 2020-07-12 at 7.15.42 PM.png" height="300px" width="250px">
+             </div>
+             <div class="details">
+             <h5>الحركه الوطنيه الجزائريه</h5>
+             <p>نبذه عن الكتاب </p>
+                     </div>
+                 </div>
+                 <div class="itemsBox">
+                  <div class="item">
+                    <div class="itemInfo">
+                      <h1>الحركه الوطنيه الجزائريه</h1>
+                      <p><span>الكبار</span></p>
+                      <a  title="add to cart" class="attToCart"> <i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                    </div>
+                  </center>
+
+                  <center>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="../صور/Screen Shot 2020-07-12 at 7.14.35 PM.png" height="300px" width="250px">
+             </div>
+        
+             <div class="details">
+             <h5></h5> العثمانيون في التاريخ</h5>
+             <p>نبذه عن الكتاب 
+                  </p>
+                     </div>
+                 </div>
+                 <div class="itemsBox">
+                  <div class="item">
+                      <h1> العثمانيون في التاريخ </h1>
+                      <p><span>الكبار</span></p>
+                      <a  title="add to cart" class="attToCart"> <i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                    </div>
+                  </center>
+
+             </div>
+              
+<!-- ----------------------------------------------------------- -->
+             <h1 id="h">كتب اطفال</h1>
+             
+
+             <div class="contaner">
+               <center>
+              <div class="card">
+              <div class="imgBox">
+              <img src="../صور/Screen Shot 2020-07-12 at 7.16.14 PM.png" height="300px" width="250px" >
+              </div>
+              <div class="details">
+                  <h5>حذاء الطنبوري</h5>
+                  <p>نبذه عن الكتاب 
+                      </p>
+                          </div>
+              </div>
+              <div class="itemsBox">
+                <div class="item">
+                    <h1>حذاء الطنبوري</h1>
+                    <p><span>اطفال</span></p>
+                    <a title="add to cart" class="attToCart"><i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                  </div>
+                </center>
+                  
+                <center>
+                      <div class="card">
+                          <div class="imgBox">
+                              <img src="../صور/Screen Shot 2020-07-12 at 7.16.38 PM.png" height="300px" width="250px">
+                   </div>
+                   <div class="details">
+                   <h5>عفاريت اللصوص</h5>
+                   <p>نبذه عن الكتاب   
+                      </p>
+                           </div>
+                       </div>
+                       <div class="itemsBox">
+                        <div class="item">
+                            <h1>عفاريت اللصوص</h1>
+                            <p><span>اطفال</span></p>
+                            <a title="add to cart" class="attToCart"><i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                          </div>
+                        </center>
+              
+      
+                        <center>
+                      <div class="card">
+                          <div class="imgBox">
+                              <img src="../صور/Screen Shot 2020-07-12 at 7.16.50 PM.png" height="300px" width="250px">
+                   </div>
+                   <div class="details">
+                   <h5>امير العفاريت</h5>
+                   <p>نبذه عن الكتاب 
+                     </p>
+                           </div>
+                       </div>
+                       <div class="itemsBox">
+                        <div class="item">
+                            <h1>امير العفاريت</h1>
+                            <p><span>اطفال</span></p>
+                            <a title="add to cart" class="attToCart"><i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                          </div>
+                        </center>
+              
+              
+              
+      
+                   
+                   <center>
+                      <div class="card">
+                          <div class="imgBox">
+                              <img src="../صور/Screen Shot 2020-07-12 at 7.16.26 PM.png" height="300px" width="250px">
+                   </div>
+              
+                   <div class="details">
+                   <h5>وزه السلطان</h5>
+                   <p>نبذه عن الكتاب 
+                        
+                        </p>
+                           </div>
+      
+                       </div>
+                       <div class="itemsBox">
+                        <div class="item">
+                            <h1>وزه السلطان</h1>
+                            <p><span>اطفال</span></p>
+                            <a  title="add to cart" class="attToCart"><i class="fa fa-heart" aria-hidden="true">اضافه الى المفضله</i></a>
+                          </div>
+                       </div>
+                        </center>
+<!-- -------------------------------------------------------------------- -->
+                  
+        </div>
+        <div class="cartBox">
+          <div class="cart">
+            <i class="fa fa-close"></i>
+            <h1>المفضله</h1>
+            <table></table>
+          </div>
+        </div>
+
+<!-- ------------------------------------------------------------------- -->
+        <footer> 
+          <p> جميع الحقوق محفوظه&copy; <script>document.write(new Date().getFullYear());</script>, لنقرأ</p>
+            <div class="social-menu">
+              <p class="p1">للتواصل معنا عبر مواقع التواصل الاجتماعي</p>
+              <br>
+              <center>
+              <ul>
+                <li><a href=""><img src="./circle-twitter-512.png" width="50px" height="50px"></a></li>
+                <li><a href=""><img src="./74079-icons-media-snapchat-computer-social-snap-logo.png" width="48px" height="48px"></i></a></li>
+                <li><a href="https://www.instagram.com/heather_drawing/" target="_blank"></i><img src="./instagram-round-flat-512.png" width="50px" height="50px"></a></li>
+              </ul>
+            </center>
+            </div>
+          </footer>
+<!-- ------------------------------------------------------------------- -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../page/book1.js"></script>
+<!-- 
+<script src="../Firebase-Login/fireBase.js"></script>
+    <script src="../Firebase-Login/main.js"></script>  -->
+</body>
+</html>
