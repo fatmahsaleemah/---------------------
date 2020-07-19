@@ -1,0 +1,952 @@
+
+*{
+    font-family: 'Amiri';
+}
+
+/* ------------------------------------------------------------- */
+
+html,body {
+  margin: 0px;
+  padding: 0px;
+  height: 100hv;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Amiri';
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}    
+
+/* ------------------------------------------------------------- */
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://a-static.besthdwallpaper.com/njwm-lkht-khalfia-1920x1080-41099_48.jpg");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box2{
+    height: 100vh;
+    width: 100%;
+    background-color: #e6f9ff;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box3{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.wallpapersden.com/image/download/broken-girl-looking-at-sky_63699_2048x1152.jpg");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+h1{
+    font-family: arial black;
+    font-size: 50px;
+    color:white;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* ------------------------------------------------------------- */
+
+
+
+.nav {
+height: 70px;
+width: 100%;
+background-color: #e6f9ff;
+position: relative;
+
+}
+
+.nav > .nav-header {
+display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+display: inline-block;
+font-size: 22px;
+padding: 10px 10px 10px 10px;
+
+
+}
+
+.nav > .nav-btn {
+display: none;
+}
+
+.nav > .nav-links {
+display: inline;
+font-size: 18px;
+float: right;
+}
+
+.logoBook{
+display: inline-block;
+padding: 13px 10px 13px 10px;
+text-decoration: none;
+color: #9db4c0;
+font-size: 30px;
+}
+
+
+.nav > .nav-links > a {
+display: inline-block;
+padding: 13px 10px 13px 10px;
+text-decoration: none;
+color: #9db4c0;
+}
+
+.nav > .nav-links > a:hover {
+background-color: #9db4c0;
+color: #eeeeee;
+border-radius: 30px;
+}
+
+.nav > #nav-check {
+display: none;
+}
+
+@media (max-width:600px) {
+.nav > .nav-btn {
+display: inline-block;
+position: absolute;
+right: 0px;
+top: 0px;
+}
+.nav > .nav-btn > label {
+display: inline-block;
+width: 50px;
+height: 50px;
+padding: 13px;
+}
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+display: block;
+width: 25px;
+height: 10px;
+border-top: 2px solid #9db4c0;
+
+}
+.nav > .nav-links {
+position: absolute;
+display: block;
+width: 100%;
+margin-top: 3px;
+height: 0px;
+transition: all 0.3s ease-in;
+overflow-y: hidden;
+top: 50px;
+left: 0px;
+}
+.nav > .nav-links > a {
+display: block;
+width: 100%;
+}
+.nav > #nav-check:not(:checked) ~ .nav-links {
+height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+height: calc(100vh - 50px);
+overflow-y: auto;
+}
+}
+
+.img{
+height: 50px;
+width: 50px;
+margin-top:2px ;
+}
+
+
+/* ------------------------------------------------------------- */
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Amiri';
+}
+
+.wrapper{
+    width: 200px;
+    height: 200px;
+    margin: 15% 70px;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+.box-area{
+    animation: animate 10s ease-in-out infinite;
+    transform-style: preserve-3d ;
+    transform-origin: 100px 100px 0;
+}
+.box-area div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+.box-area .box1{
+    background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.38\ PM.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+}
+.box-area .box2{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.17\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box-area .box3{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.14\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+
+}
+.box-area .box4{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.00.46\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box5{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.27\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box6{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.17\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+@keyframes animate{
+  form,to{
+     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16%{
+      transform: rotateY(-90deg);
+  }
+  33%{
+      transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50%{
+      transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66%{
+      transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83%{
+      transform: rotateX(90deg) ;
+  }
+}
+/* ------------------------------------------------------------- */
+.wrapper1{
+    width: 200px;
+    height: 200px;
+    margin: 15% 70px;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+.box-area1{
+    animation: animate 10s ease-in-out infinite;
+    transform-style: preserve-3d ;
+    transform-origin: 100px 100px 0;
+}
+.box-area1 div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+.box-area1 .box1-1{
+    background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.14\ PM.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+}
+.box-area1 .box2-1{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.27\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box-area1 .box3-1{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.56\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+
+}
+.box-area1 .box4-1{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.40\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area1 .box5-1{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.00.32\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area1 .box6-1{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.00.46\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+@keyframes animate{
+  form,to{
+     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16%{
+      transform: rotateY(-90deg);
+  }
+  33%{
+      transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50%{
+      transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66%{
+      transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83%{
+      transform: rotateX(90deg) ;
+  }
+}
+
+/* ------------------------------------------------------------- */
+
+
+
+.wrapper2{
+    width: 200px;
+    height: 200px;
+    margin: 15% 70px;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+.box-area2{
+    animation: animate 10s ease-in-out infinite;
+    transform-style: preserve-3d ;
+    transform-origin: 100px 100px 0;
+}
+.box-area2 div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+}
+.box-area2 .box1-2{
+    background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.40\ PM.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(100px);
+}
+.box-area2 .box2-2{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.00\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box-area2 .box3-2{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.00.11\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+
+}
+.box-area2 .box4-2{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.00.32\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area2 .box5-2{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.26\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area2 .box6-2{
+  background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.27\ PM.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+@keyframes animate{
+  form,to{
+     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16%{
+      transform: rotateY(-90deg);
+  }
+  33%{
+      transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50%{
+      transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66%{
+      transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83%{
+      transform: rotateX(90deg) ;
+  }
+}
+
+/* ------------------------------------------------------------- */
+
+
+  h1.ml8 {
+    font-weight: 800;
+    font-size: 4.5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+    font-family: 'Amiri';
+  }
+  
+  .ml8 .letters-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+  }
+  
+  .ml8 .letters {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 0.7em;
+    right: -0.12em;
+    top: -0.2em;
+  }
+  
+  .ml8 .bang {
+    font-size: 0.9em;
+    top: auto;
+    left: -0.06em;
+  }
+  
+  .ml8 .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .ml8 .circle-white {
+    width: 3.3em;
+    height: 3.3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+  }
+  
+  .ml8 .circle-dark {
+    width: 4.2em;
+    height: 4.2em;
+    background-color: #9b79d0;
+    border-radius: 3em;
+    z-index: 1;
+  }
+  
+  .ml8 .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    border: 2px dashed #9db4c0;
+    width: 4.3em;
+    height: 4.3em;
+  }
+
+  .image{
+width: 100px;
+height: 100px;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Bangers');
+  *,*::before,*::after{
+    margin:0;
+    box-sizing:border-box;
+  }
+  
+  /* ------------------------------------------------------------- */
+  
+  .card{
+    height:400px;
+    width:300px;
+    transform-style:preserve-3d;
+    position: relative;
+    transition: all 1s ease-in-out;
+    backface-visibility: hidden;
+    margin:10px;
+   display: inline-block;
+   margin-left: 100px;
+  }
+  
+  .front{
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.14\ PM.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #fff;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  
+  .back{
+    transform: rotateY( 180deg );
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #9db4c0;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  .front > img , .back > img {
+    transform:translateZ(120px);
+  }
+  
+  .card:hover{
+    transform:rotateY(180deg);
+  }
+  
+/* ------------------------------------------------------------- */
+
+  .front2{
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.50\ PM.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #fff;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  
+  .back2{
+    transform: rotateY( 180deg );
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #9db4c0;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  .front2 > img , .back2 > img {
+    transform:translateZ(120px);
+  }
+  /* ------------------------------------------------------------- */
+
+  .front3{
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(../صور/Screen\ Shot\ 2020-07-12\ at\ 7.16.26\ PM.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #fff;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  
+  .back3{
+    transform: rotateY( 180deg );
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #9db4c0;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  .front3 > img , .back3 > img {
+    transform:translateZ(120px);
+  }
+  
+/* ------------------------------------------------------------- */
+
+
+  .front4{
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.27\ PM.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #fff;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  
+  .back4{
+    transform: rotateY( 180deg );
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #9db4c0;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  .front4 > img , .back4 > img {
+    transform:translateZ(120px);
+  }
+
+/* ------------------------------------------------------------- */
+
+  .front5{
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.00.32\ PM.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #fff;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  
+  .back5{
+    transform: rotateY( 180deg );
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #9db4c0;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  .front5 > img , .back5 > img {
+    transform:translateZ(120px);
+  }
+
+/* ------------------------------------------------------------- */
+  .front6{
+    position: absolute;
+    backface-visibility: hidden;
+    background-image: url(../صور/Screen\ Shot\ 2020-07-13\ at\ 4.01.17\ PM.png);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #fff;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  
+  .back6{
+    transform: rotateY( 180deg );
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    border-radius:1em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    transform-style:preserve-3d;
+    color: #9db4c0;
+    perspective: 1000px;
+    box-shadow: 2px 4px 8px 1px rgba(black,0.4);
+  }
+  
+  .front6 > img , .back6 > img {
+    transform:translateZ(120px);
+  }
+
+/* ------------------------------------------------------------- */
+
+  .example_d {
+    color: #9db4c0 !important;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #9db4c0 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    
+    }
+
+    .example_d:hover {
+        color: #494949 !important;
+        border-radius: 50px;
+        border-color: #494949 !important;
+        transition: all 0.3s ease 0s;
+        padding: 30px;
+        font-size: 20px;
+        }
+
+
+
+        #mySidenav a {
+            position: absolute;
+            left: -60px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #9db4c0;
+            border-radius: 0 9px 9px 0;
+            margin-right:200px ;
+          }
+          
+          #mySidenav a:hover {
+            left: 0;
+          }
+          
+          #proj{
+            top: 1400px;
+            background-color:#e6f9ff;
+          }
+          
+          
+          #about {
+            top: 1450px;
+            background-color: #e6f9ff;
+            
+          }
+          
+          #blog {
+            top: 1600px;
+            background-color: #e6f9ff;
+          }
+          
+          #projects {
+            top: 1750px;
+            background-color: #e6f9ff;
+          }
+          
+          
+          #kialih{
+            top: 1900px;
+            background-color: #e6f9ff;
+          }
+          
+          #pictir{
+            top: 2050px;
+            background-color: #e6f9ff;
+            padding: 10px;
+          }
+          
+          #riwit{
+            top: 2200px;
+            background-color: #e6f9ff;
+            margin-bottom: 100px;
+            
+          }
+          
+          .size{
+            font-size: 10px;
+          }
+           
+/* ------------------------------------------------------------- */
+          footer{
+            padding: 2px;
+            margin: 0;
+            background-color: #e6f9ff;
+            background-size: 1000px;
+            height: 180px;
+            text-align: center;
+            color: #9db4c0;
+          }
+        
+        
+        
+          .social-menu ul {
+            position: relative;
+            top: 100%;
+            left: 94%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .social-menu ul li {
+            list-style: none;
+            margin: 0 10px;
+        }
+        .social-menu ul li .fa {
+            color: #000000;
+            font-size: 25px;
+            line-height: 50px;
+            transition: .5s;
+        }
+        .social-menu ul li .fa:hover {
+            color: #ffffff;
+        }
+        .social-menu ul li a {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            text-align: center;
+            transition: 0.5s;
+            transform: translate(0,0px);
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        }
+        .social-menu ul li a:hover {
+            transform: rotate(0deg) skew(0deg) translate(0, -10px);
+        }
+        .social-menu ul li:nth-child(1) a:hover {
+            background-color: #3b5999;
+        }
+        .social-menu ul li:nth-child(2) a:hover {
+            background-color: yellow;
+        }
+        .social-menu ul li:nth-child(3) a:hover {
+            background-color: #e4405f;
+        }
+        
+        
+        
+        
+        
+        
+        

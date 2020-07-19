@@ -1,0 +1,361 @@
+*{
+  font-family: 'Amiri';
+}
+
+h1{
+  font-family: arial black;
+  font-size: 50px;
+  color:white;
+  margin: 0px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+html,body {
+  margin: 0px;
+  padding: 0px;
+  height: 100hv;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Amiri';
+  }
+  /* ------------------------------------------------------------- */
+.container
+{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: url(../page4/tumblr_npuvjed9ig1ted1sho1_1280.jpg)no-repeat;
+	background-attachment: fixed;
+	background-attachment: fixed;
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+}
+.mixBlnd
+{
+	background-blend-mode: screen;
+}
+/* ----------------------------------------------------------- */
+
+    
+    .nav {
+    height: 70px;
+    width: 100%;
+    background-color: #e6f9ff;
+    position: relative;
+    
+    }
+    
+    .nav > .nav-header {
+    display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    /* color:#ddbea9 ; */
+    padding: 10px 10px 10px 10px;
+    
+    
+    }
+    
+    .nav > .nav-btn {
+    display: none;
+    }
+    
+    .nav > .nav-links {
+    display: inline;
+    font-size: 18px;
+    float: right;
+    }
+    
+    .logoBook{
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #9db4c0;
+    font-size: 30px;
+    }
+    
+    
+    .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #9db4c0;
+    }
+    
+    .nav > .nav-links > a:hover {
+    background-color: #9db4c0;
+    color: #eeeeee;
+    border-radius: 30px;
+    }
+    
+    .nav > #nav-check {
+    display: none;
+    }
+    
+    @media (max-width:600px) {
+    .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    }
+    .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #9db4c0;
+    
+    }
+    .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-top: 3px;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    }
+    .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    }
+    }
+    
+    .img{
+    height: 50px;
+    width: 50px;
+    margin-top:2px ;
+    }
+/* ----------------------------------------------------------- */
+
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 24px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #9db4c0;
+        border-radius: 0 9px 9px 0;
+        margin-right:200px ;
+      }
+      
+      #mySidenav a:hover {
+        left: 0;
+      }
+      
+      #proj{
+        top: 1150px;
+        background-color:#e6f9ff;
+      }
+      
+      
+      #about {
+        top: 1300px;
+        background-color: #e6f9ff;
+        
+      }
+      
+      #blog {
+        top: 1450px;
+        background-color: #e6f9ff;
+      }
+      
+      #projects {
+        top: 1600px;
+        background-color: #e6f9ff;
+      }
+    
+      
+      #kialih{
+        top: 1750px;
+        background-color: #e6f9ff;
+      }
+      
+      #pictir{
+        top: 1900px;
+        background-color: #e6f9ff;
+        padding: 10px;
+      }
+      
+      #riwit{
+        top: 2050px;
+        background-color: #e6f9ff;
+        margin-bottom: 100px;
+        
+      }
+      
+      .size{
+        font-size: 10px;
+      }
+       
+      /* ----------------------------------------------------------- */
+
+      #box1{
+        margin: 0px;
+        height: 100vh;
+        width: 100%;
+        background-image: url(https://1.bp.blogspot.com/--LrzzHcQ2cY/XHXEgPWHN6I/AAAAAAAAC68/f8sokzVFYg8zZ0DVZuxx-R9_1jcACZAAwCKgBGAs/w2560-h1440-c/mountain-night-scenery-stars-landscape-anime-4K-84.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        display: table;
+        background-attachment: fixed;
+    }
+/* ----------------------------------------------------------- */
+    h1{
+      font-family: 'Amiri';
+        font-size: 50px;
+        color:white;
+        margin: 0px;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        margin-top: 300px;
+    }
+    
+    .cards {
+      display: flex;
+  }
+
+  .card {
+      height: 380px;
+      background: rgb(30,55,133);
+      background: linear-gradient(0deg, rgba(30,55,133,1) 36%, rgba(182,111,226,1) 78%, rgba(116,176,235,1) 100%);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.6);
+      transition: 0.2s;   
+      /* display: inline-block; */
+      margin-left: 250px;
+      margin-top: 250px;
+      color: white;
+      margin-bottom: 200px;
+  }
+
+  
+  .card:not(:first-child) {
+      margin-left: -2rem;
+  }
+
+  .card:not(:last-child):hover,
+  .card:not(:last-child):focus-within {
+      transform: translateY(-1rem);
+  }
+
+  .card:not(:last-child):hover~.card,
+  .card:not(:last-child):focus-within~.card {
+      transform: translateX(2rem);
+  }
+  .image{
+    border-radius: 30px;
+  }
+
+/* ----------------------------------------------------------- */
+  .h1{
+    animation-duration: 2s;
+    animation-name: bounceIn;
+    animation: bounceIn 2s;
+    text-align: center;
+    margin-top: 200px;
+  }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* ----------------------------------------------------------- */
+
+  footer{
+    padding: 2px;
+    margin: 0;
+    background-color: #e6f9ff;
+    background-size: 1000px;
+    height: 180px;
+    text-align: center;
+    color: #9db4c0;
+  }
+  
+  
+  
+  .social-menu ul {
+    position: relative;
+    top: 100%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+  }
+  .social-menu ul li .fa:hover {
+    color: #ffffff;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+  .social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+  }
+  .social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+  }
+  .social-menu ul li:nth-child(2) a:hover {
+    background-color: yellow;
+  }
+  .social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+  }
+  
+  
+  
+    
